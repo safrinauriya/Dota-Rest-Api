@@ -23,7 +23,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.ViewHolder> {
     @NonNull
     @Override
     public HeroAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.hero_holder, null);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.hero_holder, parent, false);
         return new ViewHolder(v);
     }
 

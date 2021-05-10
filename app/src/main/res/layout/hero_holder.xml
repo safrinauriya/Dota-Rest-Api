@@ -1,49 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="1dp">
 
-    <ImageView
-        android:id="@+id/tv_img"
-        android:layout_width="128dp"
-        android:layout_height="72dp"
-        android:padding="8dp" />
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:background="@drawable/custom2"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Card"
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/tv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/Card"
             android:text="Name"
-            android:textColor="#848385"
+            android:textColor="#1d3557"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tv_attr"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/Card"
+            android:text="Attribute"
+            android:textColor="#3EA9BA"
+            android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/tv_attr"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="8dp"
-                android:text="Attribute"
-                android:textColor="#848385" />
-
-            <TextView
-                android:id="@+id/tv_attk"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Attack"
-                android:textColor="#848385" />
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_attk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_attr"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/Card"
+            android:text="Attack"
+            android:textColor="#3EA9BA"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#aed9e0"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -38,7 +38,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="27dp"
-                    android:text="Hero Movies"
+                    android:text="Hero Data"
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="53dp"
-                    android:text="List Recommendation Hero Movies"
+                    android:text="List Hero Dota Api"
                     android:textColor="#848385" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
