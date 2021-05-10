@@ -1,6 +1,6 @@
 # Dota-Rest-Api
 ## Tampilan Aplikasi
-|<img src="ScreenRecording.gif" width="580" height= "600">|<img src="Screenshot_20210510-153309_DotaApi.jpg" width="580" height= "600">|<img src="Screenshot_20210510-153300_DotaApi.jpg" width="580" height= "600">|
+|<img src="ScreenRecording.gif" width="580" height= "580">|<img src="Screenshot_20210510-153309_DotaApi.jpg" width="580" height= "580">|<img src="Screenshot_20210510-153300_DotaApi.jpg" width="580" height= "580">|
 |---|---|---|
 ## Volley
 > Volley Library merupakan merupakan produk yang diperkenalkan oleh Google untuk
